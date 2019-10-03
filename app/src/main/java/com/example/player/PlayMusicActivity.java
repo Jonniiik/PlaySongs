@@ -103,7 +103,7 @@ public class PlayMusicActivity extends AppCompatActivity {
     private void setInformation(String imageURL, String nameURL) {
         Picasso.get().load(imageURL).into(imageViewAlbum);
         soundURL = nameURL;
-        seekBarSounds.setMax(99);
+        seekBarSounds.setMax(100);
     }
 
     private class PlayerTask extends AsyncTask<String, String, String> {

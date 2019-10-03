@@ -36,7 +36,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         initComponents();
-        getInformationAdapterInto();
     }
 
     private void initComponents() {
@@ -90,7 +89,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public boolean onQueryTextChange(String newText) {
 
-                if (newText.length() > 4) {
+                if (newText.length() > 1) {
                     Common.Search = newText.toLowerCase();
                     getInformationAdapterInto();
                 }
