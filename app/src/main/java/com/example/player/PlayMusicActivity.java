@@ -111,6 +111,8 @@ public class PlayMusicActivity extends AppCompatActivity {
         protected String doInBackground(String... strings) {
             try {
                 mediaPlayer.setDataSource(strings[0]);
+                //mediaPlayer.seekTo(10);
+                mediaPlayer.setLooping(true);
                 mediaPlayer.prepare();
             } catch (Exception ex) {
                 ex.printStackTrace();
